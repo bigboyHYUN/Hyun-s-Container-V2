@@ -1,0 +1,34 @@
+.work_cate{
+    margin-top: 160px;
+    width: 100%;
+}
+.work_cate_backgrond{
+    background-image: url(../img/work_back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 567px;
+    padding: 0 32px;
+    position: relative;
+    text-shadow: 2px 2px 15px #fff;
+}
+
+.work_cate_backgrond h1{
+    font-size: 500px;
+    font-weight: 300;   
+    color: #fff;
+    letter-spacing: 100px;
+    line-height: 560px;
+}
+
+.work_cate_backgrond span{
+    display: block;
+    color: #fff;
+    font-size: 72px;
+    font-weight: 200;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    letter-spacing: inherit;
+}

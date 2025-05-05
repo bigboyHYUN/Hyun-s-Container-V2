@@ -1,0 +1,171 @@
+.about_contanier{
+    overflow: hidden;
+}
+
+.about_bg_text{
+    display: block;
+    color: #dddddd;
+    font-size: 200px;
+    font-weight: 600;
+    line-height: 150px;
+    white-space: nowrap;
+    animation: text-to-left 10s linear infinite;
+}
+
+
+.about_left{
+    width: 50%;
+}
+
+.about_after{
+    width: 100%;
+}
+
+.about_card{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #1c1c1c;
+    border-radius: 52px;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_left_top{
+    display: flex;
+    align-items: center;
+}
+
+.about_left_text{
+    margin-left: 24px;
+}
+
+.about_left_img img{
+    width: 134px;
+    height: 134px;
+}
+
+
+.about_left_text li p{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.about_left_text li:nth-of-type(2) p{
+    text-transform: uppercase;
+}
+
+.about_left_text li span{
+    display: block;
+    font-weight: 300;
+    margin-top: 6px;
+}
+
+
+.about_left_top_line{
+    display: block;
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 2px;
+    margin: 24px 0;
+}
+
+.about_name{
+    display: flex;
+    align-items: end;
+}
+
+.about_name h1{
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.about_name span{
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+.about_info{
+    margin-top: 16px;
+    display: flex;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+.about_info_left{
+    font-weight: 600;
+}
+
+.about_info_right{
+    font-weight: 300;
+    margin-left: 32px;
+}
+
+.about_info_left li:nth-of-type(4),
+.about_info_right li:nth-of-type(4){
+    margin-top: 24px;
+}
+
+.about_info_bottom{
+    margin-top: 32px;
+    width: 755px;
+}
+
+.about_info_bottom p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about_info_bottom p:nth-of-type(2){
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.about_right_img img{
+    width: 684px;
+    height: 707px;
+    border-radius: 52px;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.about_right_img img:hover{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+.abut_bottom_bgt{
+    width: 100%;
+    height: 50px;
+    background-color: #1c1c1c;
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+.abut_bottom_bgt span{
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    white-space: nowrap;
+    animation: text-to-left 10s linear infinite;
+}
+
+.bottom{
+    margin-top: 10px;
+    animation: text-to-right 10s linear infinite;
+}
+
+/*왼쪽에서 오른쪽으로 텍스트가 흐르는 애니메이션*/
+@keyframes text-to-left {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  

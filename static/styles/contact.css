@@ -1,0 +1,56 @@
+.contact_container{
+    background: #111111;
+    height: 100vh;
+    position: relative;
+    animation-duration: 0.05s;
+    animation-name: textflicker3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.contact_top{
+    text-align: center;
+}
+
+.contact_top li img{
+    margin-top: 120px;
+}
+
+.contact_top li h4{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.contact_top li h2{
+    margin-top: 16px;
+    font-size: 48px;
+    line-height: 72px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact_top li p{
+    margin-top: 16px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.contact_bottom{
+    font-size: 175px;
+    color: #fff;
+    position: absolute;
+    left: 32px;
+    bottom: 0;
+    text-align: center;
+}
+
+@keyframes textflicker3 {
+    from {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+  }

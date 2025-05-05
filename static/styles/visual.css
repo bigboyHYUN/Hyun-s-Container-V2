@@ -1,0 +1,95 @@
+.visual_container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow:hidden;
+}
+
+
+.vi_bg_text{
+    white-space: nowrap;
+    box-sizing: border-box; 
+    animation: text-to-right 100s linear infinite;
+    font-size: 300px;
+    font-weight: 600;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    color: #dddddd;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/*왼쪽에서 오른쪽으로 텍스트가 흐르는 애니메이션*/
+@keyframes text-to-right {
+    0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    
+  }
+
+.visual_text{
+    font-size:20px;
+    padding: 120px 188px;
+}
+
+.vi_text_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+}
+
+.vi_text_flex > div{
+    display: flex;
+}
+
+.vi_list{
+    display: block;
+    width: 4px;
+    height: 8px;
+    background-color: #1c1c1c;
+}
+
+.vi_list:after{
+    content: '';
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: 1px solid #1c1c1c;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.vi_list_text p{
+    display: block;
+    margin-left: 20px;
+    line-height: 12px;
+}
+
+.vi_list_text p + p{
+    margin-top: 6px;
+}
+
+.vi_text_bold{
+    font-weight: 600;
+}
+
+.vi_li_right{
+    position: absolute;
+    top: 120px;
+    right: 188px;
+}
+
+.vi_text_bottom{
+    position: absolute;
+    bottom: 120px;
+    width: 445px;
+}
+
+  

@@ -1,0 +1,83 @@
+
+
+
+.obj_container{
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.container{
+    width: 96.847%;
+    margin: 0 auto;
+}
+.glitch{
+    animation-duration: 0.9s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.glitch2{
+  animation-duration: 0.01s;
+  animation-name: textflicker2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #dddddd, -0.9px 0 0 #1c1c1c;
+    }
+    to {
+      text-shadow: 1px 0.1px 1px #dddddd, -0.4px -0.4px 0.4px #1c1c1c;
+    }
+  }
+
+  @keyframes textflicker2 {
+    from {
+      text-shadow: 2px 0 0 #2600ff, -0.9px 0 0 #001cbbd5;
+    }
+    to {
+      text-shadow: 2px 0.1px 1px #494949, -0.4px -0.4px 0.4px #188802;
+    }
+  }
+
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blink2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .blinking-text {
+    animation: blink 1.5s infinite; /* 1초 간격으로 무한 반복 */
+  }
+
+  .blinking-text2 {
+    animation: blink2 1.5s infinite; /* 1초 간격으로 무한 반복 */
+  }
+  
+  .blinking-text_slow {
+    animation: blink2 2s infinite; /* 1초 간격으로 무한 반복 */
+  }
+  
+  .blinking-text_slower {
+    animation: blink2 3.5s infinite; /* 1초 간격으로 무한 반복 */
+  }

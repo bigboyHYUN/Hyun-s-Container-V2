@@ -4,25 +4,275 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="static/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="static/styles/main.css">
-    <title>Three.JS-Webpack Boilerplate</title>
+    <link rel="stylesheet" href="./static/styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+  </body>
+    <title>Hyun's Container Mk.2</title>
   </head>
   <body>
-    <!-- Information modal -->
-    <a id="open-modal-btn" class="float">
-      <i class="icon-float material-icons">menu</i>
-    </a>
-    <div id="info-modal" class="modal">
-      <div class="modal-content">
-        <span class="close-modal-btn">&times;</span>
-        <h3>Welcome to my Three.JS-Webpack boilerplate!</h3>
-        <p>It is a great and easy way to bootstrap Three.Js project.</p>
-        <p>To get started clone the repo <code>git clone https://github.com/aakatev/three-js-webpack.git</code>.</p>
-        <p>For more information, navigate to the <a href="https://github.com/aakatev/three-js-webpack">project GitHub page</a>!</p>
+
+    <header class="container">
+      <ul class="header_container">
+        <li class="header_logo">
+          <a href="/">
+            <svg width="68" height="43" viewBox="0 0 68 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_231_1724)">
+              <path d="M33.9991 42.2319C26.0148 42.2319 19.5203 32.8104 19.5203 21.2319C19.5203 9.6535 26.0166 0.231934 33.9991 0.231934C41.9817 0.231934 48.478 9.6535 48.478 21.2319C48.478 32.8104 41.9834 42.2319 33.9991 42.2319ZM33.9991 2.13785C26.5922 2.13785 20.5669 10.7049 20.5669 21.2319C20.5669 31.7589 26.5922 40.326 33.9991 40.326C41.406 40.326 47.4313 31.7589 47.4313 21.2319C47.4313 10.7049 41.406 2.13785 33.9991 2.13785Z" fill="#1C1C1C"/>
+              <path d="M33.9991 42.2319C14.9341 42.2319 0 33.0073 0 21.2319C0 9.45656 14.9341 0.231934 33.9991 0.231934C53.0641 0.231934 67.9983 9.45656 67.9983 21.2319C67.9983 33.0073 53.0641 42.2319 33.9991 42.2319ZM33.9991 2.13785C25.1112 2.13785 16.7623 4.20577 10.4911 7.96042C4.49019 11.5562 1.04666 16.3941 1.04666 21.2319C1.04666 26.0698 4.49019 30.9076 10.4911 34.5035C16.7623 38.2581 25.1112 40.326 33.9991 40.326C42.887 40.326 51.2359 38.2581 57.5072 34.5035C63.5098 30.9076 66.9516 26.073 66.9516 21.2319C66.9516 16.3909 63.5081 11.5562 57.5072 7.96042C51.2359 4.20577 42.887 2.13785 33.9991 2.13785Z" fill="#1C1C1C"/>
+              <path d="M34.5225 1.18481H33.4758V41.2789H34.5225V1.18481Z" fill="#1C1C1C"/>
+              <path d="M67.4767 20.2791H0.523315V22.185H67.4767V20.2791Z" fill="#1C1C1C"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_231_1724">
+              <rect width="68" height="42" fill="white" transform="translate(0 0.231934)"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </a>        
+        </li>
+        <li class="header_mid">
+          <span class="old glitch">
+            ⓒDesign & Develope by HYUN
+          </span>
+        </li>
+        <li class="nav_menu">
+          <nav class="header_menu">
+            <span class="header_menu_text">menu</span>
+            <ul class="nav_hover">
+              <li><button><span>HOME</span></button></li>
+              <li><button><span>WTH</span></button></li>
+              <li><button><span>WORK</span></button></li>
+              <li><button><span>CONTACT</span></button></li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="prograss_bar">
+        <ul class="pb_item">
+          <li class="pb_left">
+            <p class="pixel pb_left_small glitch">404 can found,100 Continue</p>
+            <p class="old pb_left_big glitch">Ui / UX / Web Designer</p>
+          </li>
+          <li class="pb_right">
+              <span class="pixel pb_right_small glitch blinking-text">scroll bar</span>
+              <div class="pb_bar">
+                <div id="scrollIndicator"></div>
+              </div>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- End information modal -->
+
+  <section id="a" class="visual_container container">
+    <span class="vi_bg_text">
+      Design of the Peop:e, by the peop:e, for the peop:e Design of the Peop:e, by the peop:e, for the peop:e Design of the Peop:e, by the peop:e, for the peop:e
+
+    </span>
+    <div class="obj_container">
+    </div>
+    <div class="visual_text">
+      <div class="vi_text_flex">
+        <div class="vi_position">
+          <div class="vi_list blinking-text"></div>
+          <div class="vi_list_text glitch">
+            <p>This is Hyun’s Container</p>
+            <p class="vi_text_bold">Design of the Peop:e, </p>
+          </div>
+        </div>
+      </div>
+              <div class="vi_li_right vi_position">
+          <div class="vi_list blinking-text"></div>
+          <div class="vi_list_text glitch">
+            <p>Do you want iconic</p>
+            <p>design? “Is here”</p>
+          </div>
+        </div>
+
+      <div class="vi_text_bottom glitch ">
+        <p>
+          You'll start by learning the basics of web animation, 
+          including the principles of motion, timeline animation, 
+          and the tools and techniques used by award-winning developers
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="what_container">
+      <div class="what_container_left">
+        <h1 class="what_left_bigtext glitch2">What the HYUN?</h1>
+        <p class="what_left_smalltext glitch"><span>C</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          lear Understanding of Designers' 
+          Boundaries Areas that can and cannot be developed 
+          can lead to more experimental areas. Creative Design. 
+          To allow diverse team members to work together smoothly, 
+          considerable communication energy is needed. 
+          This can save energy and time
+        </p>
+      </div>
+      <div class="what_container_right">
+        <div class="what_right_box">
+          <div class="what_right_box_img">
+            <img src="./static/img/torso.png" alt="">
+          </div>
+          <div class="what_right_box_text">
+            <p class="old blinking-text2">§ Research & Analysis</p>
+            <p class="old blinking-text_slow">§ Develope & Optimization </p>
+            <p class="old blinking-text_slower">§ Planning & Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about_contanier container">
+      <span class="about_bg_text">ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL</span>
+      <div class="about_items">
+        <div class="about_card">
+          <div class="about_left">
+            <div class="about_left_items">
+              <ul class="about_left_top">
+                <li class="about_left_img">
+                  <img src="./static/img/about_mark.png" alt="">
+                </li>
+                <li>
+                  <ul class="about_left_text">
+                    <li><p>Design of the Peop:e, by the peop:e, for the peop:e</p></li>
+                    <li><p>hyun’s container</p></li>
+                    <li><span>#AH10808to2025-001</span></li>
+                  </ul>
+                </li>
+              </ul>
+              <span class="about_left_top_line"></span>
+            </div>
+            <div>
+              <div class="about_name"> 
+                <h1>HYUN AHN</h1>
+                <span>/<span class="old blinking-text2">Designer</span></span>
+              </div>
+              <div class="about_info">
+                <ul class="about_info_left">
+                  <li>date of birth</li>
+                  <li>citizen</li>
+                  <li>gender</li>
+                  <li>listed as</li>
+                  <li>SRU ID</li>
+                </ul>
+                <ul class="about_info_right">
+                  <li>1995.08.05</li>
+                  <li>korea of republic</li>
+                  <li>male</li>
+                  <li>design agent</li>
+                  <li>a-250308-12(M)</li>
+                </ul>
+              </div>
+              <div class="about_info_bottom">
+                <p>Clear Understanding of Designers' Boundaries Areas that can and cannot be developed can lead to more experimental areas. Creative Design. To allow diverse team members to work together smoothly, considerable communication energy is needed. This can save energy and time</p>
+                <p class="ko">디자이너의 경계에 대한 명확한 이해 개발할 수 있는 영역과 불가능한 영역은 더 실험적인 영역으로 이어질 수 있습니다. 창의적인 디자인. 다양한 팀원들이 원활하게 함께 활동할 수 있도록, 상당한 통신 에너지가 필요합니다. 현 안은 에너지와 시간을 줄일 수 있습니다</p>
+              </div>
+            </div>
+          </div>
+          <div class="about_right_img">
+            <img src="./static/img/profile_sample.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <span class="about_bg_text bottom">ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL ICONIC MATARIAL</span>
+
+    </div>
+
+    </section>
+
+  <section class="work_cate">
+    <div class="work_cate_backgrond">
+      <h1>WORK</h1>
+      <span>(03)</span>
+    </div>
+  </section>
+
+  <section class="work_container container">
+    <div class="work_item work_a">
+      <div class="work_left">
+        <div class="work_left_top">
+          <h2>01</h2>
+          <img src="./static/img/sta.png" alt="">
+        </div>
+        <ul class="work_info">
+          <li><h1>Run mate</h1></li>
+          <li><span>UX /UI Portpolio</span></li>
+          <li><p>Design / Planning</p></li>
+        </ul>
+        <button class="work_button">
+          <a href="">View More
+            <span class="work_ball"></span>
+            <span class="view_arrow">
+            <svg width="40" height="12" viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1H38L28.88 11" stroke="white"/>
+            </svg></span>
+            </a>
+        </button>
+      </div>
+      <div class="work_right">
+        <a href="">
+          <img src="./static/img/work_a.jpg" alt="">
+        </a>
+
+      </div>
+    </div>
+    <div class="work_item work_b">
+      <div class="work_left">
+        <div class="work_left_top">
+          <h2>02</h2>
+          <img src="./static/img/sta.png" alt="">
+        </div>
+        <ul class="work_info">
+          <li><h1>Lmood Web Site Renewal</h1></li>
+          <li><span>Responsible Web</span></li>
+          <li><p>Design / Planning / Publishing assistance (dev by #Last Design)</p></li>
+        </ul>
+        <button class="work_button">
+          <a href="">View More
+            <span class="work_ball"></span>
+            <span class="view_arrow">
+              <svg width="40" height="12" viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 1H38L28.88 11" stroke="white"/>
+              </svg>
+            </span>
+
+            </a>
+        </button>
+      </div>
+      <div class="work_right">
+        <a href="">
+          <img src="./static/img/work_b.jpg" alt="">
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact_container">
+    <div class="container">
+      <ul class="contact_top">
+        <li><img src="./static/img/samplepixel.png" alt=""></li>
+        <li><h4 class="old">You got lucky!</h4></li>
+        <li><h2 class="old">You can be my employer.<br> 
+          Contact me now</h2></li>
+        <li><p>e-mail : Kinglight095@gmail.com<br>tel : +82)10 6506 8690<br>Seoul, Republic of Korea</p></li>
+      </ul>
+      <div><span class="old contact_bottom">HYUN’S CONTAINER</span></div>
+    </div>
+  </section>
 
     <script src="public/bundle.js"></script>
-  </body>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      let list = gsap.utils.toArraay('')
+    </script>
 </html>
